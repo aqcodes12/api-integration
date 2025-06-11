@@ -24,7 +24,10 @@ const Navbar = () => {
             <li>Plugins</li>
             <li>Blog</li>
             <li>
-              <button className="bg-purple-500 px-5 py-2 text-white flex justify-center items-center gap-2 hover:scale-105 transition-transform duration-300">
+              <button
+                onClick={() => navigate("/login")}
+                className="bg-purple-500 px-5 py-2 text-white flex justify-center items-center gap-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              >
                 Login
                 <BsArrowUpRightCircle />
               </button>

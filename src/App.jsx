@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/home/HomePage";
 import PostsPage from "./pages/posts/PostsPage";
 import PostDetails from "./pages/posts/PostDetails";
+import LoginPage from "./pages/onboarding/LoginPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/posts" element={<PostsPage />} />
           <Route path="/post/:id" element={<PostDetails />} />
         </Routes>
