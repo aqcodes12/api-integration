@@ -23,6 +23,12 @@ const Navbar = () => {
             </li>
             <li>Plugins</li>
             <li>Blog</li>
+            <li
+              className="cursor-pointer"
+              onClick={() => navigate("/all-todos")}
+            >
+              TODOS
+            </li>
             <li>
               <button
                 onClick={() => navigate("/login")}
